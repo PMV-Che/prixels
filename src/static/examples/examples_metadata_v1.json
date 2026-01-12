@@ -1,0 +1,282 @@
+[
+  {
+    "file": "github-icon.svg",
+    "object": "github",
+    "option1": "cat",
+    "option2": "fish",
+    "option3": "piano"
+  },
+  {
+    "file": "bear-stock-market-icon.svg",
+    "object": "bear",
+    "option1": "stock",
+    "option2": "finance",
+    "option3": "pizza"
+  },
+  {
+    "file": "whatsapp-icon.svg",
+    "object": "whatsapp",
+    "option1": "chat",
+    "option2": "phone",
+    "option3": "cloud"
+  },
+  {
+    "file": "volume-muted-icon.svg",
+    "object": "muted",
+    "option1": "speaker",
+    "option2": "music",
+    "option3": "cloud"
+  },
+  {
+    "file": "linkedin-square-icon.svg",
+    "object": "linkedin",
+    "option1": "network",
+    "option2": "professional",
+    "option3": "tiger"
+  },
+  {
+    "file": "wikipedia-icon.svg",
+    "object": "wikipedia",
+    "option1": "logo",
+    "option2": "article",
+    "option3": "sushi"
+  },
+  {
+    "file": "camera-icon.svg",
+    "object": "camera",
+    "option1": "lens",
+    "option2": "recording",
+    "option3": "piano"
+  },
+  {
+    "file": "facebook-round-color-icon.svg",
+    "object": "facebook",
+    "option1": "social",
+    "option2": "network",
+    "option3": "piano"
+  },
+  {
+    "file": "baby-icon.svg",
+    "object": "baby",
+    "option1": "onesie",
+    "option2": "crib",
+    "option3": "calculator"
+  },
+  {
+    "file": "bird.svg",
+    "object": "bird",
+    "option1": "feather",
+    "option2": "winged",
+    "option3": "piano"
+  },
+  {
+    "file": "bunny.svg",
+    "object": "bunny",
+    "option1": "rabbit",
+    "option2": "fluffy",
+    "option3": "calculator"
+  },
+  {
+    "file": "traffic-light-signal-icon.svg",
+    "object": "traffic light",
+    "option1": "traffic",
+    "option2": "signal",
+    "option3": "piano"
+  },
+  {
+    "file": "keyboard-piano-icon.svg",
+    "object": "piano",
+    "option1": "keyboard",
+    "option2": "music",
+    "option3": "cloud"
+  },
+  {
+    "file": "black-instagram-icon.svg",
+    "object": "instagram",
+    "option1": "panther",
+    "option2": "night",
+    "option3": "piano"
+  },
+  {
+    "file": "intel-logo-2020.svg",
+    "object": "intel",
+    "option1": "processor",
+    "option2": "microchip",
+    "option3": "piano"
+  },
+  {
+    "file": "twitter-square-icon.svg",
+    "object": "twitter",
+    "option1": "logo",
+    "option2": "frame",
+    "option3": "piano"
+  },
+  {
+    "file": "bull-stock-market-icon.svg",
+    "object": "bull",
+    "option1": "market",
+    "option2": "finance",
+    "option3": "piano"
+  },
+  {
+    "file": "dvd-disk-icon.svg",
+    "object": "dvd",
+    "option1": "player",
+    "option2": "movie",
+    "option3": "pencil"
+  },
+  {
+    "file": "pause-round-icon.svg",
+    "object": "pause",
+    "option1": "round",
+    "option2": "button",
+    "option3": "pineapple"
+  },
+  {
+    "file": "airpods-icon.svg",
+    "object": "airpods",
+    "option1": "headphones",
+    "option2": "wires",
+    "option3": "sushi"
+  },
+  {
+    "file": "play-pause-icon.svg",
+    "object": "play",
+    "option1": "button",
+    "option2": "music",
+    "option3": "carrot"
+  },
+  {
+    "file": "snapchat-line-icon.svg",
+    "object": "snapchat",
+    "option1": "filter",
+    "option2": "story",
+    "option3": "piano"
+  },
+  {
+    "file": "spotify.svg",
+    "object": "spotify",
+    "option1": "music",
+    "option2": "streaming",
+    "option3": "carpet"
+  },
+  {
+    "file": "tiktok-square-icon.svg",
+    "object": "tiktok",
+    "option1": "pixel",
+    "option2": "frame",
+    "option3": "cloud"
+  },
+  {
+    "file": "apple-logo-2.svg",
+    "object": "apple",
+    "option1": "fruit",
+    "option2": "tree",
+    "option3": "car"
+  },
+  {
+    "file": "fish-line-icon.svg",
+    "object": "fish",
+    "option1": "line",
+    "option2": "reel",
+    "option3": "cloud"
+  },
+  {
+    "file": "cat-animal-icon.svg",
+    "object": "cat",
+    "option1": "feline",
+    "option2": "pet",
+    "option3": "car"
+  },
+  {
+    "file": "linux-icon.svg",
+    "object": "linux",
+    "option1": "tuxedo",
+    "option2": "distro",
+    "option3": "space"
+  },
+  {
+    "file": "accessible.svg",
+    "object": "building",
+    "option1": "architecture",
+    "option2": "infrastructure",
+    "option3": "ocean"
+  },
+  {
+    "file": "a.svg",
+    "object": "a letter",
+    "option1": "core",
+    "option2": "fruit",
+    "option3": "piano"
+  },
+  {
+    "file": "thumbs-down-black-icon.svg",
+    "object": "thumbs down",
+    "option1": "down",
+    "option2": "black",
+    "option3": "pizza"
+  },
+  {
+    "file": "pipe.svg",
+    "object": "pipe",
+    "option1": "plumbing",
+    "option2": "flow",
+    "option3": "beach"
+  },
+  {
+    "file": "youtube-icon.svg",
+    "object": "youtube",
+    "option1": "video",
+    "option2": "music",
+    "option3": "cloud"
+  },
+  {
+    "file": "ass.svg",
+    "object": "ass",
+    "option1": "donkey",
+    "option2": "seat",
+    "option3": "pizza"
+  },
+  {
+    "file": "guitar-black-icon.svg",
+    "object": "guitar",
+    "option1": "strings",
+    "option2": "music",
+    "option3": "pizza"
+  },
+  {
+    "file": "windows-icon.svg",
+    "object": "windows",
+    "option1": "desktop",
+    "option2": "computer",
+    "option3": "elephant"
+  },
+  {
+    "file": "hand-finger-up-icon.svg",
+    "object": "hand",
+    "option1": "finger",
+    "option2": "human",
+    "option3": "tiger"
+  },
+  {
+    "file": "automobile-icon.svg",
+    "object": "car",
+    "option1": "vehicle",
+    "option2": "road",
+    "option3": "piano"
+  },
+  {
+    "file": "x-social-media-black-icon.svg",
+    "object": "x",
+    "option1": "mark",
+    "option2": "social",
+    "option3": "piano"
+  },
+  {
+    "file": "discord-black-icon.svg",
+    "object": "discord",
+    "option1": "raven",
+    "option2": "shadow",
+    "option3": "piano"
+  }
+]
