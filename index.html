@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pixel Guess Game</title>
+  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app"></div>
+
+  <script type="module" src="WelcomeScreen.js"></script>
+  <script type="module" src="GameScreen.js"></script>
+  <script type="module">
+    import { range } from 'https://cdn.jsdelivr.net/npm/d3-array@3/+esm';
+    window.d3range = range;
+  </script>
+  
+  <script type="module" src="../src/js/pathologize.js"></script>
+
+</body>
+</html>
