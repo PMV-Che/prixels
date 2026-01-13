@@ -4,7 +4,7 @@ export function renderWelcomeScreen() {
   const app = document.getElementById('app');
   app.innerHTML = `
     <div class="welcome-screen">
-      <img src="../src/static/images/logo.png" alt="Prixels Logo" class="prixels-logo" />
+      <img src="./src/static/images/logo.png" alt="Prixels Logo" class="prixels-logo" />
       <h1 class="prixels-title">Prixels</h1>
       <div class="prixels-subtitle">Find the hidden picture as fast as you can</div>
       <button id="start-btn" class="start-btn">Start</button>
