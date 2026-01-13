@@ -50,7 +50,7 @@ export function renderGameScreen() {
   answerBtns.forEach(btn => btn.disabled = true);
 
   // Load the JSON metadata and pick a random SVG
-  fetch(`../src/static/examples/examples_metadata_v1.json?${Date.now()}`) // Add cache buster
+  fetch(`./src/static/examples/examples_metadata_v1.json?${Date.now()}`) // Add cache buster
     .then(response => response.json())
     .then(json => {
       const randomEntry = json[Math.floor(Math.random() * json.length)];
