@@ -1,4 +1,4 @@
-import polygonize from './polygonize';
+import polygonize from './polygonize.js';
 import getTotalLengthAllPaths from './getTotalLengthAllPaths';
 
 
