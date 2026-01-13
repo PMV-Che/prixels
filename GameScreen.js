@@ -76,7 +76,7 @@ export function renderGameScreen() {
         btn.dataset.correct = options[idx].correct ? "1" : "0";
       });
 
-      return fetch(`../src/static/examples/${svgFile}`);
+      return fetch(`./src/static/examples/${svgFile}`);
     })
     .then(response => response.text())
     .then(data => {
@@ -151,7 +151,7 @@ export function renderGameScreen() {
       function showPopup(message) {
         popupMessage.textContent = message;
         // Show the SVG image for the right answer
-        popupImage.src = `../src/static/examples/${rightAnswerFile}`;
+        popupImage.src = `./src/static/examples/${rightAnswerFile}`;
         popupImage.style.display = 'block';
         popupOverlay.classList.remove('hidden');
       }
