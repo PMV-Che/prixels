@@ -1,5 +1,5 @@
-import polygonize from '../src/js/polygonize.js';
-import pathologize from '../src/js/pathologize.js';
+import polygonize from 'src/js/polygonize.js';
+import pathologize from 'src/js/pathologize.js';
 
 export class PixelOutline {
   /**
