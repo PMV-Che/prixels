@@ -5,94 +5,169 @@ export function renderWelcomeScreen() {
   app.innerHTML = `
     <div class="welcome-screen">
       <img src="./src/static/images/logo.png" alt="Prixels Logo" class="prixels-logo" />
-      <h1 class="prixels-title">Prixels</h1>
-      <div class="prixels-subtitle">Find the hidden picture as fast as you can</div>
-      <button id="start-btn" class="start-btn">Start</button>
-      <div class="made-by">made by Pablo</div>
+      <h1 class="prixels-title">PRIXELS</h1>
+      <div class="prixels-subtitle">🎯 Find the hidden picture as fast as you can! 🎯</div>
+      <button id="start-btn" class="start-btn">🎮 START GAME 🎮</button>
+      <div class="made-by">⚡ made by Pablo ⚡</div>
     </div>
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+      
       body {
-        background: #1e3557; /* Elegant deep blue */
+        background: linear-gradient(45deg, #0f172a 0%, #1e293b 50%, #334155 100%);
         margin: 0;
-        font-family: 'Segoe UI', 'Arial', sans-serif;
+        font-family: 'Press Start 2P', monospace;
+        overflow: hidden;
       }
+      
       .welcome-screen {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background: #1e3557;
+        background: radial-gradient(circle at 50% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 70%), 
+                   linear-gradient(45deg, #0f172a 0%, #1e293b 50%, #334155 100%);
         position: relative;
+        padding: 2rem;
+        box-sizing: border-box;
       }
       .prixels-logo {
-        max-width: 300px;
-        width: 80%;
-        margin-bottom: 1.5em;
-        animation: fadeIn 2s ease-out;
+        max-width: 280px;
+        width: 70%;
+        margin-bottom: 2rem;
+        animation: logoFloat 3s ease-in-out infinite alternate;
+        filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.5));
       }
-      @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
+      
+      @keyframes logoFloat {
+        from { transform: translateY(0px) rotate(-2deg); }
+        to { transform: translateY(-10px) rotate(2deg); }
       }
+      
       .prixels-title {
-        font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-        font-size: 4em;
-        color: orange;
-        letter-spacing: 0.08em;
-        text-shadow: 0 4px 24px #ff9800, 0 1px 0 #fff, 0 0 8px #ff9800;
-        margin-bottom: 0.7em;
-        transform: rotate(-8deg);
-        animation: tiltLoop 5s cubic-bezier(.68,-0.55,.27,1.55) infinite alternate;
+        font-family: 'Press Start 2P', monospace;
+        font-size: 3rem;
+        background: linear-gradient(45deg, #ff6b35 0%, #ffa552 25%, #ff6b35 50%, #ffa552 75%, #ff6b35 100%);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: 0.1em;
+        text-shadow: 4px 4px 0px rgba(0,0,0,0.8);
+        margin-bottom: 1.5rem;
+        animation: titleGlow 2s ease-in-out infinite alternate, gradientShift 3s linear infinite;
+        text-align: center;
+        line-height: 1.2;
       }
-      @keyframes tiltLoop {
-        0% { transform: rotate(-8deg) scale(1); }
-        50% { transform: rotate(8deg) scale(1.05);}
-        100% { transform: rotate(-8deg) scale(1);}
+      
+      @keyframes titleGlow {
+        from { filter: drop-shadow(0 0 5px rgba(255, 107, 53, 0.8)); }
+        to { filter: drop-shadow(0 0 25px rgba(255, 107, 53, 1)); }
+      }
+      
+      @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
       }
       .prixels-subtitle {
-        font-family: 'Segoe UI', 'Arial', sans-serif;
-        font-size: 1.5em;
-        color: #ffe0b2;
-        margin-bottom: 1.5em;
-        opacity: 0.9;
+        font-family: 'Orbitron', monospace;
+        font-size: 1.1rem;
+        color: #94a3b8;
+        margin-bottom: 2.5rem;
         text-align: center;
-        padding: 0 1em;
+        padding: 0 1rem;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        animation: subtitlePulse 4s ease-in-out infinite;
       }
+      
+      @keyframes subtitlePulse {
+        0%, 100% { opacity: 0.8; }
+        50% { opacity: 1; }
+      }
+      
       .start-btn {
-        padding: 1.2em 3em;
-        font-size: 1.7em;
-        border-radius: 16px;
-        border: none;
-        background: linear-gradient(90deg, orange 60%, #ffb300 100%);
-        color: #fff;
-        font-weight: bold;
-        box-shadow: 0 4px 24px #ff9800a0;
+        font-family: 'Press Start 2P', monospace;
+        padding: 1.5rem 3rem;
+        font-size: 1rem;
+        border-radius: 0;
+        border: 4px solid #ff6b35;
+        background: linear-gradient(45deg, #ff6b35 0%, #ffa552 50%, #ff6b35 100%);
+        color: #0f172a;
+        font-weight: normal;
         cursor: pointer;
-        transition: transform 0.2s, box-shadow 0.2s;
-        animation: pulseBtn 1.5s infinite alternate;
+        transition: all 0.3s ease;
+        text-shadow: none;
+        box-shadow: 
+          0 0 0 2px #0f172a,
+          0 0 0 6px #ff6b35,
+          0 8px 15px rgba(255, 107, 53, 0.4),
+          inset 0 2px 0 rgba(255,255,255,0.3);
+        position: relative;
+        letter-spacing: 0.1em;
+        animation: buttonGlow 2s ease-in-out infinite alternate;
       }
       .start-btn:hover {
-        transform: scale(1.08);
-        box-shadow: 0 8px 32px #ff9800c0;
-        background: linear-gradient(90deg, #ffb300 0%, orange 100%);
+        background: linear-gradient(45deg, #ffa552 0%, #ff6b35 50%, #ffa552 100%);
+        transform: translateY(-4px);
+        box-shadow: 
+          0 0 0 2px #0f172a,
+          0 0 0 6px #ffa552,
+          0 12px 20px rgba(255, 107, 53, 0.6),
+          inset 0 2px 0 rgba(255,255,255,0.3);
       }
-      @keyframes pulseBtn {
-        0% { box-shadow: 0 4px 24px #ff9800a0; }
-        100% { box-shadow: 0 8px 32px #ff9800c0; }
+      
+      .start-btn:active {
+        transform: translateY(-1px);
       }
+      
+      @keyframes buttonGlow {
+        from { filter: drop-shadow(0 0 5px rgba(255, 107, 53, 0.5)); }
+        to { filter: drop-shadow(0 0 15px rgba(255, 107, 53, 0.8)); }
+      }
+      
       .made-by {
         position: absolute;
-        bottom: 24px;
+        bottom: 2rem;
         left: 0;
         width: 100%;
         text-align: center;
-        font-size: 1.05em;
-        color: #ffe0b2;
-        opacity: 0.85;
-        letter-spacing: 0.12em;
-        font-family: 'Fira Mono', 'Menlo', 'Monaco', 'monospace';
-        font-style: italic;
+        font-family: 'Press Start 2P', monospace;
+        font-size: 0.7rem;
+        color: #64748b;
+        letter-spacing: 0.1em;
+        animation: footerBlink 3s ease-in-out infinite;
+      }
+      
+      @keyframes footerBlink {
+        0%, 90%, 100% { opacity: 0.7; }
+        95% { opacity: 1; }
+      }
+      
+      /* Mobile Responsiveness */
+      @media (max-width: 480px) {
+        .prixels-title {
+          font-size: 2rem;
+          line-height: 1.3;
+        }
+        
+        .prixels-subtitle {
+          font-size: 0.9rem;
+          margin-bottom: 2rem;
+        }
+        
+        .start-btn {
+          font-size: 0.8rem;
+          padding: 1.2rem 2rem;
+        }
+        
+        .made-by {
+          font-size: 0.6rem;
+        }
       }
     </style>
   `;

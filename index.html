@@ -2,19 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pixel Guess Game</title>
   <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="app"></div>
+
+  <div class="phone-frame">
+    <div id="app"></div>
+  </div>
 
   <script type="module" src="./WelcomeScreen.js"></script>
   <script type="module" src="./GameScreen.js"></script>
   <script type="module">
     import { range } from 'https://cdn.jsdelivr.net/npm/d3-array@3/+esm';
     window.d3range = range;
+    
+    // Initialize the welcome screen when page loads
+    import { renderWelcomeScreen } from './WelcomeScreen.js';
+    renderWelcomeScreen();
   </script>
   
  <!-- <script type="module" src="./src/js/pathologize.js"></script> -->
